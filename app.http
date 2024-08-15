@@ -1,0 +1,52 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+    "username": "Rankesh1",
+    "password": "rankesh1234"
+}
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username": "Rankesh1",
+    "password": "rankesh1234"
+}
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username": "Rankesh",
+    "password": "rankesh123"
+}
+###
+
+POST http://localhost:3000/api/posts/1/comments/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJhbmtlc2giLCJpYXQiOjE3MjM3MDYzNzB9.Wpqd2vCy-yX1TqBtSu2ZNJmUfVxvWIz3Y5PDF64Rr4c
+Content-Type: application/json
+
+{
+    "text": "Excellent"
+}
+###
+
+POST http://localhost:3000/api/posts/1/comments/1/reply/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJhbmtlc2giLCJpYXQiOjE3MjM3MDYzNzB9.Wpqd2vCy-yX1TqBtSu2ZNJmUfVxvWIz3Y5PDF64Rr4c
+Content-Type: application/json
+
+{
+    "text": "Excellent"
+}
+###
+
+GET http://localhost:3000/api/posts/1/comments/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJhbmtlc2giLCJpYXQiOjE3MjM3MDYzNzB9.Wpqd2vCy-yX1TqBtSu2ZNJmUfVxvWIz3Y5PDF64Rr4c
+###
+
+GET http://localhost:3000/api/posts/1/comments/1/expand/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJhbmtlc2giLCJpYXQiOjE3MjM3MDYzNzB9.Wpqd2vCy-yX1TqBtSu2ZNJmUfVxvWIz3Y5PDF64Rr4c
+ 
